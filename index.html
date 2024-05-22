@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country-App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- the body of the container -->
+    <header class="main-nav">
+      <!-- navigation bar begins-->
+      <nav class="navigation">
+        <div>Where in world?</div>
+        <!-- moon icon -->
+        <div class="button-dark">
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+          <p class="sub">Dark mode</p>
+        </div>
+      </nav>
+    </header>
+
+    <!-- search -->
+
+    <div class="form-valid">
+      <form action="">
+        <div class="search">
+          <!-- search icon -->
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </g>
+          </svg>
+          <div>
+            <input
+              type="search"
+              name="search"
+              class="searchsub"
+              id="searchbox"
+              placeholder="search for a country"
+            />
+          </div>
+        </div>
+        <!-- the filter bar -->
+        <div class="svg-all">
+            <p class="filt">
+              Filter by region
+              <svg
+                class="svg-down"
+                width="18px"
+                height="18px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M12 6V18M12 18L7 13M12 18L17 13"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </p>
+
+          <ol class="filter-lists">
+            <li>Asia</li>
+            <li>Africa</li>
+            <li>America</li>
+            <li>Europe</li>
+          </ol>
+        </div>
+      </form>
+    </div>
+
+    <section class="rest-country">
+      <!-- the grid system -->
+      <div class="country">
+        <!-- the flag of the country -->
+        <div>
+          <img src="https://flagcdn.com/w320/de.png" alt="" />
+        </div>
+        <!-- the text -->
+        <div>
+          <h1>Germany</h1>
+          <ul>
+            <li><a>Population: </a>81770900</li>
+            <li><a>region: </a> Europe</li>
+            <li><a>capital: </a> Berlin</li>
+          </ul>
+        </div>
+      </div>
+      <!-- usa -->
+      <div class="country">
+        <!-- the flag of the country -->
+        <div>
+          <img src="https://flagcdn.com/w320/us.png" alt="" />
+        </div>
+        <!-- the text -->
+        <div>
+          <h1>United states</h1>
+          <ul>
+            <li><a>Population: </a>323947000</li>
+            <li><a>region: </a> America</li>
+            <li><a>capital: </a> Washington D.c.</li>
+          </ul>
+        </div>
+      </div>
+      <!--brazil  -->
+      <div class="country">
+        <!-- the flag of the country -->
+        <div>
+          <img src="https://flagcdn.com/w320/br.png" alt="" />
+        </div>
+        <!-- the text -->
+        <div>
+          <h1>Brazil</h1>
+          <ul>
+            <li><a>Population: </a>206135893</li>
+            <li><a>region: </a> American</li>
+            <li><a>capital: </a> Brasila</li>
+          </ul>
+        </div>
+      </div>
+      <!-- iceland -->
+      <div class="country">
+        <!-- the flag of the country -->
+        <div>
+          <img src="https://flagcdn.com/w320/is.png" alt="" />
+        </div>
+        <!-- the text -->
+        <div>
+          <h1>Iceland</h1>
+          <ul>
+            <li><a>Population: </a>334300</li>
+            <li><a>region: </a> Europe</li>
+            <li><a>capital: </a> Reykjavk</li>
+          </ul>
+        </div>
+      </div>
+      <!-- afghanistan -->
+      <div class="country">
+        <!-- the flag of the country -->
+        <div>
+          <img src="https://flagcdn.com/w320/af.png" alt="" />
+        </div>
+        <!-- the text -->
+        <div>
+          <h1>Afghanistan</h1>
+          <ul>
+            <li><a>Population: </a>27657145</li>
+            <li><a>region: </a> Asia</li>
+            <li><a>capital: </a> Kabul</li>
+          </ul>
+        </div>
+      </div>
+      <!-- aland island -->
+      <div class="country">
+        <!-- the flag of the country -->
+        <div>
+          <img src="https://flagcdn.com/w320/ax.png" alt="" />
+
+        </div>
+        <!-- the text -->
+        <div>
+          <h1>Aland island</h1>
+          <ul>
+            <li><a>Population: </a>28875</li>
+            <li><a>region: </a> Europe</li>
+            <li><a>capital: </a> Mariehamn</li>
+          </ul>
+        </div>
+      </div>
+      <!-- albania -->
+      <div class="country">
+        <!-- the flag of the country -->
+        <div>
+          <img src="https://flagcdn.com/w320/al.png" alt="" />
+        </div>
+        <!-- the text -->
+        <div class="country-text">
+          <h1>Albania</h1>
+          <ul>
+            <li><a>Population: </a>2886026</li>
+            <li><a>region: </a> Europe</li>
+            <li><a>capital: </a> Tirana</li>
+          </ul>
+        </div>
+      </div>
+      <!-- algeria -->
+      <div class="country">
+        <!-- the flag of the country -->
+        <div>
+          <img src="https://flagcdn.com/w320/dz.png" alt="" />
+        </div>
+        <!-- the text -->
+        <div>
+          <h1>Algeria</h1>
+          <ul>
+            <li><a>Population: </a>40400000</li>
+            <li><a>region: </a> Africa</li>
+            <li><a>capital: </a> Algeris</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- template for the click events -->
+    <section class="eachCountry">
+      <!-- the bacl button -->
+      <div class="back-btn">
+        <button class="btn">
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                fill="#000000"
+                d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+              ></path>
+              <path
+                fill="#000000"
+                d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+              ></path>
+            </g>
+          </svg>
+          Back
+        </button>
+      </div>
+      <div class="singleC">
+        <div class="singleImage">
+          <img src="" alt="" />
+        </div>
+        <div class="singleText">
+          <h1>Germany</h1>
+          <div class="fir">
+            <!-- the first lists -->
+            <div>
+              <ul>
+                <li><a>Native Name: </a> Germanii</li>
+                <li><a>Population: </a>81770900</li>
+                <li><a>region: </a> Europe</li>
+                <li><a>sub Region: </a> Western Europe</li>
+                <li><a>capital: </a> Berlin</li>
+              </ul>
+            </div>
+            <!-- the second lists -->
+            <div class="sec">
+              <ul>
+                <li><a>top level domain: </a>be</li>
+                <li><a>currencies: </a> Euro</li>
+                <li><a>language: </a>Dutch, French, German</li>
+              </ul>
+            </div>
+          </div>
+          <!-- the final lists -->
+          <div class="bir">
+            <p>Border Countries:</p>
+            <div  class="grids-best">
+              <a href="" class="best">France</a>
+              <a href="" class="best">Berlin</a>
+              <a href="" class="best">Netherlands</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/country.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
