@@ -89,7 +89,6 @@ const submit = document.querySelector("form");
 // updata ui
 const UpdateUi = (data) => {
   const countryDets = data.countryDets;
-  console.log(countryDets);
 
   const eachsec = document.querySelector(".singleC");
 
@@ -116,8 +115,8 @@ const UpdateUi = (data) => {
       <div class="sec">
         <ul>
           <li><a>top level domain: </a>${countryDets.cca2}</li>
-          <li><a>currencies: </a> ${countryDets.currencies.name}</li>
-          <li><a>language: </a>${countryDets.languages.eng}</li>
+          <li><a>currencies: </a> ${Object.values(countryDets.currencies)[0].name}</li>
+          <li><a>language: </a>${Object.values(countryDets.languages)[0]}</li>
         </ul>
       </div>
     </div>
@@ -131,6 +130,8 @@ const UpdateUi = (data) => {
   </div>
 </div>
   `;
+
+
 };
 
 const updateCountry = async (searching) => {
