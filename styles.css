@@ -209,14 +209,24 @@ section.rest-country {
     width: 180px;
     height: 100px;
 }
-/* animation styling */
 .animate {
-    max-width: 375px;
-    margin: 0px auto;
+    position: relative;
+    left: 46%;
+    display: inline-block;
+    text-align: center;
 }
-.animate p {
-    color: #14141473;
-    font-size: 16px;
+.animate-icon {
+    font-size: 64px;
+    cursor: pointer;
+    animation: animationstarter  3s infinite;
+}
+@keyframes animationstarter {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 /* laptop sizes */
 @media screen and (max-width: 1200px) {
@@ -296,6 +306,12 @@ section.rest-country {
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 0px;
         margin-top: 10px;
+    }
+    .animate {
+        position: relative;
+        left: 40%;
+        display: inline-block;
+        text-align: center;
     }
 }
 
@@ -426,6 +442,12 @@ section.rest-country {
         .bir {
             margin: 40px 0px;
             margin-left: 0px;
+        }
+        .animate {
+            position: relative;
+            left: 30%;
+            display: inline-block;
+            text-align: center;
         }
 }
 
